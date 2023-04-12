@@ -1,8 +1,8 @@
 # 缺少 hooks 相关的 eslint 规则，使用 any 应该报错
 
-# 请求尝试使用SWR
+# 请求尝试使用 SWR
 
-# UI库 material ui
+# UI 库 material ui
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
