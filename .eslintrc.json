@@ -1,9 +1,9 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "no-unused-vars": "error",
-    "no-var": "error",
-    "no-console": "warn",
-    "no-empty-function": "error"
+    "no-unused-vars": "error", //禁止未使用的变量
+    "no-var": "error", //禁止var
+    "no-console": "warn", //警告console
+    "no-empty-function": "error" //函数不能为空
   }
 }
