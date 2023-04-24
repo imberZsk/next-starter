@@ -8,7 +8,7 @@ const processData = (res: AxiosResponse) => {
 
 const successHandle = (res: AxiosResponse) => {
   // TODO:处理一些成功回调，例如请求进度条
-  return res.data
+  return res
 }
 
 const errorHandle = (err: AxiosError) => {
