@@ -1,3 +1,2 @@
-export default function Introduce() {
-  return <header>header</header>
-}
+export { default as Header } from './Header'
+export * from './const'

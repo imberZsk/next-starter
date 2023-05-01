@@ -10,6 +10,7 @@
   @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
 }
 
+/* 文字渐变 */
 .gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FF6723] to-[#D63629];
 }

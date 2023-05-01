@@ -1,3 +1,1 @@
-export const useTest = () => {
-  return 666
-}
+// 通用hook

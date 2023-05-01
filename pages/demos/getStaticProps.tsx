@@ -1,4 +1,5 @@
 import { NextPage } from 'next'
+import Head from 'next/head'
 
 interface Obj {
   name: string
@@ -9,10 +10,17 @@ interface Props {
 }
 
 const Demo1: NextPage<Props> = ({ data }) => {
-  return <div>{data.name}</div>
+  return (
+    <div>
+      <Head>
+        <title>自定义title</title>
+      </Head>
+      {data.name}
+    </div>
+  )
 }
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   return {
     props: { data: { name: 'imber' } }
   }

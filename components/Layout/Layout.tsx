@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
-import Header from '../header'
 import { ReactNode } from 'react'
+import { Header } from '../header'
 
 interface Props {
   children: ReactNode

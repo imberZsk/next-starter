@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true, //可以不要
+  // 用了react会执行两次
+  // reactStrictMode: true,
+
+  // 服务端ctx、客户端useRouter都能拿到语言信息
   i18n: {
     locales: ['cn', 'en'],
     defaultLocale: 'cn'
   },
+
   images: {
     remotePatterns: [
       {
