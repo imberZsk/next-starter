@@ -16,7 +16,7 @@ class Request {
     this.resInterceptions()
   }
   private setDefaultConfig() {
-    this.instance.defaults.baseURL = ''
+    this.instance.defaults.baseURL = 'https://dummyjson.com'
     this.instance.defaults.timeout = TIMEOUT
   }
   private reqInterceptions() {

@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 const RouterDemo = () => {
   const router = useRouter()
-  // '------router的动态参数直接取，不要用useEffect去取，本地开发刷新会触发两次，但是打包后只触发一次------'
+  // '------router的动态参数直接取，不要用useEffect去取，本地开发刷新会触发两次，但是打包后只触发一次，还可以通过router去修改请求头------'
 
   // 用了useEffect反而没拿到router的参数
   // useEffect(() => {

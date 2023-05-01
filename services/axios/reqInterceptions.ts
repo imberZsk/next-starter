@@ -1,11 +1,12 @@
 import type { InternalAxiosRequestConfig } from 'axios'
 
 const defaultRequestInterception = (config: InternalAxiosRequestConfig) => {
-  const token = localStorage.getItem('token')
-  // 设置请求头的Authorization字段为token
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`
-  }
+  // 在服务端请求的时候可能没有window
+  // const token = localStorage.getItem('token')
+  // // 设置请求头的Authorization字段为token
+  // if (token) {
+  //   config.headers.Authorization = `Bearer ${token}`
+  // }
   return config
 }
 

@@ -26,4 +26,11 @@ export const getStaticProps = async () => {
   }
 }
 
+export const getStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: false
+  }
+}
+
 export default Demo1
