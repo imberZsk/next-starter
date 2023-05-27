@@ -9,7 +9,7 @@ interface Props {
   data: Obj
 }
 
-const Demo1: NextPage<Props> = ({ data }) => {
+const SSGDemo: NextPage<Props> = ({ data }) => {
   return (
     <div>
       <Head>
@@ -26,11 +26,4 @@ export const getStaticProps = async () => {
   }
 }
 
-export const getStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: false
-  }
-}
-
-export default Demo1
+export default SSGDemo

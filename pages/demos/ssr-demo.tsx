@@ -8,7 +8,7 @@ interface Props {
   data: Obj
 }
 
-const Demo1: NextPage<Props> = ({ data }) => {
+const SSRDemo: NextPage<Props> = ({ data }) => {
   return <div>{data.name}</div>
 }
 
@@ -18,4 +18,4 @@ export const getServerSideProps = async () => {
   }
 }
 
-export default Demo1
+export default SSRDemo
